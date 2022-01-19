@@ -1,0 +1,19 @@
+
+# TO DO
+先确定功能玩法
+
+
+# class structure
+
+load_model: load_scene
+            load_static_obj
+            load_dynamic
+
+position
+path
+timeline
+
+
+camera:
+record:
+video_output:
