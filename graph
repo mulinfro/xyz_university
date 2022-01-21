@@ -17,5 +17,6 @@ event
 clip
 
 camera:
-record:
-video_output:
+
+paly: record
+      video_output

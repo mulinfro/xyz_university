@@ -7,7 +7,7 @@ class Play
 
     }
 
-    apply();
+    record();
 
     output_video();
 
