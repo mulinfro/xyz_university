@@ -13,6 +13,8 @@ position
 path
 timeline
 
+event
+clip
 
 camera:
 record:
