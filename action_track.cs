@@ -1,9 +1,9 @@
 
 
-class SecondClip
+class Frame
 {
-    path = Position[24];
-    actions = Actions[24];
+    Transform trans;
+    Action action;
 }
 
 class Track
@@ -14,7 +14,9 @@ class Track
     int trackTimeLength = 0;
     // 快进或者慢放速度
     float speed = 1;
-    track = Vector<SecondClip>();
+    track = Vector<Frame>();
+
+    Track(List[Transform] transform, List[Action] actions) {}
 
 }
 

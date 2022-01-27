@@ -1,5 +1,5 @@
 
 class Camera
 {
-    Track track = Track(CameraActions);
+    Track track = Track(cameraTrans, cameraActions);
 }
