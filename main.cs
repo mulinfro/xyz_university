@@ -36,6 +36,16 @@ while (true) {
 
 
 // 放置各个Track
+UnifiedTrack uniTrack = new UnifiedTrack(tracks);
+
+while(true) {
+    camInfo = getNewCamera();
+    uniTrack.addCamera(camInfo.beg, camInfo.end);
+    uniTrack.setLastCameraTransform();
+}
+
+uniTrack.play();
+uniTrack.output_video(video_name, video_format);
 
 
 
