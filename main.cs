@@ -13,12 +13,29 @@ while(loadFlag) {
 }
             
 
-// edit timeline
-// 控制
-applyControl();
+List[Track] tracks = new List[Track]();
 
-while (notEnd) {
-    Transform trans = getTransform();
-    Action trans = getTransform();
-    wait(1/24);
+// 编辑各个tracks
+while (true) {
+    BindedObject selectedObj = selectObj();
+    if (selectedObj == null) break;
+    Track aTrack = new Track(selectedObj);
+    int controlMode = getControlMode();
+    if (controlMode == cmode.SINGLE) {
+        // 单体运动
+        aTrack.recordByControl();
+    } else if (controlMode == cmode.BINDED) {
+        // 绑定运动
+        Track faTrack = getFatherTrack();
+        Transform bias = getbiasTransform();
+        aTrack.bindedWithBias(faTrack, bias, randomTrans);
+    }
+
+    tracks.push(aTrack);
 }
+
+
+// 放置各个Track
+
+
+

@@ -3,7 +3,7 @@
 class Frame
 {
     Transform trans;
-    Action action;
+    Actions action;
 }
 
 class Track
@@ -14,9 +14,17 @@ class Track
     int trackTimeLength = 0;
     // 快进或者慢放速度
     float speed = 1;
-    track = Vector<Frame>();
+    Vector<Frame> track = Vector<Frame>();
+    
+    Track(bindedObject selectedObj) {}
 
-    Track(List[Transform] transform, List[Action] actions) {}
+    addFrams(List[Transform] transform, List[Actions] actions) {}
+
+    addFram(Transform transform, Actions actions) {}
+
+    recordByControl(){}
+
+    bindedWithBias(Track faTrack, Transform trans, RandomTransform rand){}
 
 }
 

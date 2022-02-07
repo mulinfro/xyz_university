@@ -2,7 +2,7 @@
 
 class TimeLine
 {
-    bindedObject selectedObj;
+    BindedObject selectedObj;
 
     Track track = Track(selectObj);
 
