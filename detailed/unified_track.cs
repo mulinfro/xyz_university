@@ -5,6 +5,8 @@ class UnifiedTrack
     List<Camera> cameras;
     List<Track> tracks;
 
+    List<Light> lights;
+
     UnifiedTrack() {}
 
 
